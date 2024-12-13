@@ -52,10 +52,9 @@ def madlip():
         madlip = f'{sub}는 {pla}에서  {noun1} 을/를 {verb1} 하지만, {sub}는 {abj} {noun2}가 {verb2}'
 
 #print함수로 출력합니다
-
     print(madlip)
-
     print('수고하셨습니다!')
 
+#def함수로 지정해준 madlip 함수를 실행합니다.
 madlip()
 
