@@ -64,7 +64,7 @@ def madlip():
 #print함수로 출력합니다
     print('\n결과는...?\n')
     print(madlip)
-    print('수고하셨습니다!')
+    print('\n수고하셨습니다!')
 
 #def함수로 지정해준 madlip 함수를 실행합니다.
 madlip()
