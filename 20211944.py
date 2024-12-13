@@ -18,19 +18,44 @@
 
 ###################################코드 카피#############################
 
+#def함수로 묶어줍니다.
+def madlip():
+
 # 프로그램 시작을 알리고, 선택하라고 명시합니다.
-print('madlip 프로그램을 시작합니다!')
-print('1/2/3/4/5/6 중 한개를 선택하세요!')
+
+    print('madlip 프로그램을 시작합니다!')
+    print('1/2/3/4/5/6 중 한개를 선택하세요!')
+    print('1~3은 영어, 4~6은 한국어 입니다!')
 
 # choice 변수를 선언하고, input으로 입력받습니다.
-choice = input('선택 : ')
+    choice = input('선택 : ')
 
 #만약, 1~6이 아닌 숫자를 입력한다면 오류로서 종료합니다.
-if choice not in ['1','2','3','4','5','6']:
-    print('잘못된 선택입니다. 종료합니다ㅠㅠ')
-    return
+    if choice not in ['1','2','3','4','5','6']:
+     print('잘못된 선택입니다. 종료합니다ㅠㅠ')
+     return
+
+# 단어변수를 입력을 받습니다.
+    sub = input('주어를 입력하세요 : ')
+    verb1 = input('첫번째 동사를 입력하세요 : ')
+    verb2 = input('두번째 동사를 입력하세요 : ')
+    pla = input('장소를 입력하세요 : ')
+    abj = input('형용사를 입력하세요 : ')
+    noun1 = input ('첫번째 명사를 입력하세요 :')
+    noun2 = input ('두번째 명사를 입력하세요 : ')
 
 
+#고른 번호대로 각각 madlip변수에 f스트링을 이용해서 삽입, 미리 만든 문장과 조합 합니다.
+    if choice == '1':
+     madlip = f'{sub} {verb1}(s/ed) a {noun1} in {pla} but, {sub} {verb2} {abj} {noun2} '
+    elif choice == '4':
+        madlip = f'{sub}는 {pla}에서  {noun1} 을/를 {verb1} 하지만, {sub}는 {abj} {noun2}가 {verb2}'
 
+#print함수로 출력합니다
 
+    print(madlip)
+
+    print('수고하셨습니다!')
+
+madlip()
 
