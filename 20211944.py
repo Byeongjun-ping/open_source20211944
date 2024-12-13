@@ -18,6 +18,8 @@
 
 ###################################코드 카피#############################
 
+
+
 #def함수로 묶어줍니다.
 def madlip():
 
@@ -45,16 +47,27 @@ def madlip():
     noun2 = input ('두번째 명사를 입력하세요 : ')
 
 
-#고른 번호대로 각각 madlip변수에 f스트링을 이용해서 삽입, 미리 만든 문장과 조합 합니다.
+#고른 번호대로 각각 madlip변수에 f스트링을 이용해서 삽입, 미리 만든 문장과 조합 합니다. 1~3은 영어, 4~6은 한국어 입니다.
     if choice == '1':
-     madlip = f'{sub} {verb1}(s/ed) a {noun1} in {pla} but, {sub} {verb2} {abj} {noun2} '
+        madlip = f'{sub} {verb1}(s/ed) a {noun1} in {pla} but, {sub} {verb2} {abj} {noun2} '
+    elif choice == '2':
+        madlip = f'{sub} was {verb1}ing and then {verb2}ing at {pla} when {sub} found {abj} {noun1} and {noun2}'
+    elif choice == '3':
+        madlip = f'A {abj} {noun1} appeared to {sub}, {verb1}ed and {verb2}ed, and left {pla}. {noun2} followed them.'
     elif choice == '4':
         madlip = f'{sub}는 {pla}에서  {noun1} 을/를 {verb1} 하지만, {sub}는 {abj} {noun2}가 {verb2}'
+    elif choice == '5':
+        madlip = f'{sub}는 {pla}에서 {noun2}를 보고 깜짝 놀랐다. 그 이유는 {abj} {noun1}이/가  {verb1}하고 있었기 때문이다.'
+    elif choice == '6':
+        madlip = f'{verb1}을 잘하던 {sub}는  {pla}에서 {abj} {noun2}를 만났고, {verb2}하면서 친해졌다.'
 
 #print함수로 출력합니다
+    print('\n결과는...?\n')
     print(madlip)
     print('수고하셨습니다!')
 
 #def함수로 지정해준 madlip 함수를 실행합니다.
 madlip()
+
+
 
