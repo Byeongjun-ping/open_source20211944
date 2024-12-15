@@ -11,8 +11,7 @@
 #noun2 = input('Noun: ')
 #name = input('Name: ')
 
-## 매드립 변수에 f-string 이용하여 삽입합니다.
-## f스트링에 문장과 앞서 입력한 단어 조합
+## 매드립 변수에 f-string을 이용하여 삽입합니다. f-sting에는 먼저 입력한 변수와 문장이 조합됩니다.
 #madlib = f'Computer science is {adj}. I can {verb1} while sitting on a {noun2} #and {verb2}. I once went to the {place} and found a big {noun1}! I decided that would be a great place for {name}.'
 
 ## 매드립 출력합니다.
